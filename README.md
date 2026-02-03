@@ -52,3 +52,15 @@ Project in progress. Sections updated sequentially as steps are completed.
 ![User Disabled](screenshots/leaver/user-disabled.png)
 ![User Deleted](screenshots/leaver/user-deleted.png)
 ![Failed Sign-in](screenshots/leaver/failed-sign-in.png)
+
+## Logging & Audit Review
+
+- Reviewed Entra ID audit logs for lifecycle events
+- Verified authentication and MFA enforcement
+- Confirmed audit visibility for all actions
+
+![Audit User Created Logs](screenshots/logs/audit-user-created.png)
+![Audit MFA](screenshots/logs/audit-mfa.png)
+![Sign-In Logs](screenshots/logs/sign-in-log.png)
+![Audit User Disabled](screenshots/logs/audit-user-disabled.png)
+![Audit User Disabled Logs](screenshots/logs/audit-user-deleted.png)
