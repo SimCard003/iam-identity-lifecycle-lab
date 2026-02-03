@@ -9,7 +9,7 @@ Demonstrate joiner, mover, and leaver identity lifecycle using Microsoft Entra I
 - Browser-based administration
 
 ## Status
-Project in progress. Sections updated sequentially as steps are completed.
+Project completed.
 
 ## Joiner (New User Onboarding)
 - Created new user accounts in Entra ID
