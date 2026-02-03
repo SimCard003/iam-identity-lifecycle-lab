@@ -49,5 +49,6 @@ Project in progress. Sections updated sequentially as steps are completed.
 
 ![Blocked Sign-In](screenshots/leaver/sign-in-blocked.png)
 ![Group Removed](screenshots/leaver/group-removed.png)
+![User Disabled](screenshots/leaver/user-disabled.png)
 ![User Deleted](screenshots/leaver/user-deleted.png)
 ![Failed Sign-in](screenshots/leaver/failed-sign-in.png)
