@@ -36,3 +36,18 @@ Project in progress. Sections updated sequentially as steps are completed.
 ![Group Before](screenshots/mover/group-before.png)
 ![Group After](screenshots/mover/group-after.png)
 ![Group Change Log](screenshots/logs/audit-group-change.png)
+
+## Leaver (Offboarding)
+- Blocked user sign-in
+- Reset credentials
+- Removed all group memberships
+- Deleted user account
+- Attempted sign-in to confirm access denial
+- Verified actions in audit and sign-in logs
+
+**Outcome:** User access fully revoked with auditable evidence.
+
+![Blocked Sign-In](screenshots/leaver/sign-in-blocked.png)
+![Group Removed](screenshots/leaver/group-removed.png)
+![User Deleted](screenshots/leaver/user-deleted.png)
+![Failed Sign-in](screenshots/leaver/failed-sign-in.png)
