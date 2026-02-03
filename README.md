@@ -12,7 +12,6 @@ Demonstrate joiner, mover, and leaver identity lifecycle using Microsoft Entra I
 Project in progress. Sections updated sequentially as steps are completed.
 
 ## Joiner (New User Onboarding)
-
 - Created new user accounts in Entra ID
 - Assigned users to security groups to represent role-based access
 - Completed first-time sign-in and password reset
@@ -25,3 +24,15 @@ Project in progress. Sections updated sequentially as steps are completed.
 ![Group Membership](screenshots/joiner/group-membership.png)
 ![MFA Enrollment](screenshots/joiner/mfa-enrollment.png)
 ![Successful Sign-In](screenshots/joiner/sign-in-success.png)
+
+## Mover (Role / Access Change)
+- Removed user from original security group
+- Assigned user to a new security group representing a role change
+- Validated updated group membership
+- Confirmed changes recorded in audit logs
+
+**Outcome:** Access updated without recreating the user account.
+
+![Group Before](screenshots/mover/group-before.png)
+![Group After](screenshots/mover/group-after.png)
+![Group Change Log](screenshots/logs/audit-group-change.png)
