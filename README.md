@@ -7,12 +7,28 @@ Demonstrate joiner, mover, and leaver identity lifecycle using Microsoft Entra I
 - Microsoft Entra ID (Free Tenant)
 - Windows Desktop
 - Browser-based administration
+  
+## Skills Demonstrated
+- Microsoft Entra ID (Azure AD): users, groups, authentication
+- Group-based access (RBAC concept)
+- MFA via Security Defaults
+- Audit Logs & Sign-in Logs validation
+- Identity lifecycle: Joiner / Mover / Leaver
 
+## How to Reproduce (High Level)
+1. Create a user in Entra ID
+2. Assign user to a security group (role-based access simulation)
+3. Sign in as the user and complete MFA enrollment
+4. Validate authentication in Sign-in Logs
+5. Modify access by changing group membership and validate in Audit Logs
+6. Offboard: block sign-in → remove group memberships → delete user
+7. Confirm access denial + log evidence
+   
 ## Status
 Project completed.
 
 ## Joiner (New User Onboarding)
-- Created new user accounts in Entra ID
+- Created new user account(s) in Entra ID
 - Assigned users to security groups to represent role-based access
 - Completed first-time sign-in and password reset
 - Enrolled users in MFA as required by Security Defaults
@@ -39,7 +55,6 @@ Project completed.
 
 ## Leaver (Offboarding)
 - Blocked user sign-in
-- Reset credentials
 - Removed all group memberships
 - Deleted user account
 - Attempted sign-in to confirm access denial
@@ -64,3 +79,8 @@ Project completed.
 ![Sign-In Logs](screenshots/logs/sign-in-log.png)
 ![Audit User Disabled](screenshots/logs/audit-user-disabled.png)
 ![Audit User Disabled Logs](screenshots/logs/audit-user-deleted.png)
+
+## Limitations / Next Iteration
+- Used Security Defaults (MFA). Next: Conditional Access policy + per-group MFA.
+- Next: automate joiner/mover/leaver with PowerShell or Graph API.
+- Next: add PIM (Privileged Identity Management) scenario / role assignment.
